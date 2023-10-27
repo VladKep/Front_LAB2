@@ -1,0 +1,118 @@
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin-bottom: 25px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}
+.first{
+    background-color: gray;
+}
+.second{
+    background-color: blanchedalmond;
+}
+.first:hover{
+    background-color: blanchedalmond;
+}
+.second:hover{
+    background-color: gray;
+}
+
+td.text {
+    width: 0; /* Встановлення розміру для текстових ячеєк */
+}
+.target {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 25px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+.sticktop{
+    position: absolute;
+    width: 5px;
+    height: 175px;
+    background-color: black;
+}
+.stickleft{
+    position: absolute;
+    width: 175px;
+    height: 5px;
+    background-color: black;
+}
+.target1 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 25px solid black;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(45deg);
+    margin-left: 20px;
+}
+
+.circle1 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.plus {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(-45deg);
+    
+}
+
+.plus::before,
+.plus::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+}
+
+.plus::before {
+    width: 175%;
+    height: 5px;
+    top: 50%;
+    left: -37.5%;
+    transform: translateY(-50%);
+}
+
+.plus::after {
+    width: 5px;
+    height: 175%;
+    left: 50%;
+    top: -37.5%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
